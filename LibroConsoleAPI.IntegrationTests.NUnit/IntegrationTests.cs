@@ -50,11 +50,11 @@ namespace LibroConsoleAPI.IntegrationTests.NUnit
             // Assert
             var bookInDb = await dbContext.Books.FirstOrDefaultAsync(b => b.ISBN == newBook.ISBN);
             Assert.NotNull(bookInDb);
-            Assert.AreEqual("Test Book", bookInDb.Title);
-            Assert.AreEqual("John Doe", bookInDb.Author);
+            Assert.That(bookInDb.Title, Is.EqualTo("Test Book"));
+            Assert.That(bookInDb.Author, Is.EqualTo("John Doe"));
         }
 
-        public async Task AddBookAsync_TryToAddBookWithInvalidCredentials_ShouldThrowException()
+        public async Task AddBookAsyncTryToAddBookWithInvalidCredentialsShouldThrowException()
         {
             // Arrange
 
