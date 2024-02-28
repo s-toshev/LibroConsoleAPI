@@ -88,6 +88,16 @@
     "Genre": "Family Saga",
     "Pages": 336,
     "Price": 11.99
+  },
+
+   {
+    "ISBN": "5000143039655",
+    "Title": "The God of Cows",
+    "Author": "Zarzo",
+    "YearPublished": 2007,
+    "Genre": "Cow Saga",
+    "Pages": 1336,
+    "Price": 31.99
   }
 
 ]
